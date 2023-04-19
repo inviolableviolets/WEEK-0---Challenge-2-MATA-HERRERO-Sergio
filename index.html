@@ -5,12 +5,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAEBAQBqKioHq6urk2Li4sKQUFBAQQEBAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABCQkJAezs7IOo3/z+2N7hyq2trVGHh4cIPDw8AQICAgEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQEBAQHk5ORgUcD6/xqt+f+W2fz+2NzdwqqqqkeDg4MGNTU1AQEBAQEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABtra2N3vQ+/8drvn/H6/5/yOw+f+k3fv919nZuqampj98fHwFLi4uAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAZKSkg+m3/z9KbL5/yyz+v8AjOb/AJnx/y60+v+x4fv71dXVsaSkpDZ3d3cEKysrARwcHAESEhIBAAAAAQAAAAFra2sBzer54gCk+f8AddX/AA6G/wAfk/8Npvf/JrH6/zu5+v+95fn50dHRp6qqqkG4uLhgnp6eJFBQUAEAAAABREREAfL2+LkEpfn/AG/Q/wAOhv8AGo//CqT2/x+q9f8AXcP/AHnY/0m++v+y2/z+f7D7/9ff7eGWlpYTAAAAAR8fHwHz8/OQKLL5/wCj+P8Af9z/C5br/yKw+f8AZMf/AA6G/wARiP8An/X/GI35/yp8+f+tzPz+oqKiJgAAAAEDAwMB5+fnZ1PB+v9ZxPz/BKX5/xyu+f9Ivfr/AITg/wAYjf8AN6X/AKP4/ySB+f8qfPn/zdzy6IuLiwoAAAABAAAAAcHBwT5+0Pv/AKT5/wBpy/8AWcD/AKD2/w+p+f8Hpvj/AKP4/w2W+f8qfPn/TZL5/9TV1Z5iYmIBAAAAAQAAAAGVlZUVqOD8/gCR6/8ADob/AA6G/wBy0v8ttPr/Ga35/wSf+f8lf/n/Knz5/7TQ+vqtra0vIiIiAQAAAAEAAAABc3NzAdDs+ukAoPb/ADSj/wAll/8Akuv/AKT5/wad+f8jgfn/Knz5/2+m+v/T09OOcHBwAQAAAAEAAAABAAAAAXt7ewPu8fPVBaX5/wCk+f8Ao/n/B5z5/xeN+f8offn/Knz5/2Cd+v/d4OW7l5eXCQ8PDwEAAAABAAAAAQAAAAHGxsZNkbv7/yh9+f8lgPn/KH35/yp8+f8qfPn/Ln75/4y4+/7e3+Krn5+fDBwcHAEAAAABAAAAAQAAAAEAAAAB2NjYR5jA/P4vf/n/Knz5/y5++f9Pk/r/jLj7/9fi89vQ0NBbhISEAhMTEwEAAAABAAAAAQAAAAEAAAABAAAAAXd3dwH5+fln9fX3quzv9Lju7/Cs6urqhc3NzUOKiooENjY2AQAAAAEAAAABAAAAAQAAAAEAAAAB//8AAI//AADD/wAAwP8AAMA/AADADwAAwAEAAMABAADgAQAA4AEAAOADAADgAwAA4AcAAOAPAADgPwAA8P8AAA=="
+    rel="icon" type="image/x-icon" />
+  <title>Pizza order</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <form action="">
+    <h1>¡Ayuda a Edu a pedir una pizza!</h1>
 
+    <fieldset class="selectors">
+      <legend>Tipo</legend>
+
+      <label for="select-size">Tamaño de la pizza</label>
+      <select id="select-size">
+        <option value="small" selected>Pequeña</option>
+        <option value="medium">Mediana</option>
+        <option value="large">Grande</option>
+      </select>
+
+      <label for="select-dough">Tipo de masa</label>
+      <select id="select-dough">
+        <option value="thin" selected>Fina</option>
+        <option value="thicc">Gruesa</option>
+        <option value="bread">Pan</option>
+      </select>
+    </fieldset>
+
+    <fieldset class="checkboxes">
+      <legend>Ingredientes</legend>
+      <div class="columns">
+        <label><input type="checkbox" class="ingredient-checkbox"> Pepperoni</label>
+        <label><input type="checkbox" class="ingredient-checkbox"> Setas</label>
+        <label><input type="checkbox" class="ingredient-checkbox"> Cebolla</label>
+        <label><input type="checkbox" class="ingredient-checkbox"> Pimiento</label>
+        <label><input type="checkbox" class="ingredient-checkbox" checked> Piña</label>
+      </div>
+    </fieldset>
+
+    <button type="submit">Pedir pizza</button>
+
+    <footer>
+      <p>¡Debes seleccionar al menos un ingrediente!</p>
+    </footer>
+  </form>
   <script src="formulario.js"></script>
 </body>
 
